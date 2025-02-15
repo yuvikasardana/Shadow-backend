@@ -14,7 +14,7 @@ module.exports = {
 
     const io = new Server(strapi.server.httpServer, {
       cors: {
-        origin: "http://localhost:5173", // Update for production
+        origin: "*", // Update for production
         methods: ["GET", "POST"],
       },
     });
